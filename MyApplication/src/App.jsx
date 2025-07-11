@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Route, Routes } from 'react-router-dom'
-import Home from './components/pages/Home'
 import Navbar from './components/common/Navbar'
+import Post from './components/pages/Post'
+import PostWithComment from './components/pages/PostWithComment'
 // import './App.css'
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <>
     <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path="/" element={<Post/>} />
+        <Route path="/postWithComment" element={<PostWithComment/>} />
       </Routes>
     </>
   )

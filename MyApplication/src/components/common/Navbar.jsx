@@ -16,6 +16,8 @@ const Navbar = () => {
     textDecoration: 'none',
     fontSize: '18px',
     marginRight: '15px',
+    border:'1px solid white',
+    paddingInlie:'5px'
   };
 
   const logoStyle = {
@@ -27,7 +29,8 @@ const Navbar = () => {
     <div style={navbarStyle}>
       <div style={logoStyle}>Code</div>
       <div>
-        <Link to="/" style={linkStyle}>Home</Link>
+        <Link to="/" style={linkStyle}>Post</Link>
+        <Link to="/postWithComment" style={linkStyle}>Post_With_Comment</Link>
       </div>
     </div>
   );
